@@ -1,0 +1,27 @@
+# Compile of IF.v was successful.
+# Compile of IF.v was successful.
+# Compile of ID.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of IF.v was successful.
+# Compile of ID.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of IF.v was successful.
+# Compile of ID.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of IF.v was successful.
+# Compile of ID.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Load canceled
+# Compile of ID.v failed with 1 errors.
+# Load canceled
+# Compile of ID.v failed with 2 errors.
+# Compile of ID.v failed with 1 errors.
+# Compile of IF.v was successful.
+# Compile of ID.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of ID.v failed with 1 errors.
+# Compile of IF.v was successful.
+# Compile of ID.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# No Design Loaded!

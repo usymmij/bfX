@@ -1,0 +1,17 @@
+/home/jimmy/code/bfX/decode.v {1 {vlog -work work -stats=none /home/jimmy/code/bfX/decode.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module decode
+-- Compiling module tb_decode
+
+Top level modules:
+	tb_decode
+
+} {} {}} /home/jimmy/code/bfX/memory.v {1 {vlog -work work -stats=none /home/jimmy/code/bfX/memory.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mem
+-- Compiling module tb_mem
+
+Top level modules:
+	tb_mem
+
+} {} {}}

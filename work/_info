@@ -1,0 +1,341 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/jimmy
+vbfX
+Z0 !s110 1753576759
+!i10b 1
+!s100 <E7kXZih]<A;QUX_^Mfnc3
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I^I81e`6JFhQ@UjA5ZSF_N3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 d/home/jimmy/code/bfX
+Z4 w1753576756
+Z5 8/home/jimmy/code/bfX/bfx.v
+Z6 F/home/jimmy/code/bfX/bfx.v
+!i122 78
+L0 4 27
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1753576759.000000
+Z9 !s107 decode.v|memory.v|/home/jimmy/code/bfX/bfx.v|
+Z10 !s90 -reportprogress|300|-work|work|-stats=none|/home/jimmy/code/bfX/bfx.v|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+nbf@x
+vdecode
+R0
+!i10b 1
+!s100 6l7l`<gk3cW^o;06oF?^Q1
+R1
+I>H7cW:RK4biN1URYZzc8e1
+R2
+R3
+Z13 w1753575957
+Z14 8decode.v
+Z15 Fdecode.v
+!i122 78
+Z16 L0 1 13
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vixDecode
+!s110 1753575378
+!i10b 1
+!s100 dY5L52e6fQ2Q_F?XoM_oY0
+R1
+IH1Xk2eD5;7S9i^PB^g6;W0
+R2
+R3
+w1753573718
+8/home/jimmy/code/bfX/decode.v
+F/home/jimmy/code/bfX/decode.v
+!i122 49
+R16
+R7
+r1
+!s85 0
+31
+!s108 1753575378.000000
+!s107 /home/jimmy/code/bfX/decode.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/jimmy/code/bfX/decode.v|
+!i113 1
+R11
+R12
+nix@decode
+vixFetch
+Z17 !s110 1753569046
+!i10b 1
+!s100 5T_G4dEUUoYVzl[h=V0IB3
+R1
+IzHcFE;lDdHkWI@T^[S6zZ3
+R2
+R3
+Z18 w1753569042
+Z19 8/home/jimmy/code/bfX/work/IF.v
+Z20 F/home/jimmy/code/bfX/work/IF.v
+!i122 37
+L0 27 9
+R7
+r1
+!s85 0
+31
+Z21 !s108 1753569046.000000
+Z22 !s107 /home/jimmy/code/bfX/work/IF.v|
+Z23 !s90 -reportprogress|300|-work|work|-stats=none|/home/jimmy/code/bfX/work/IF.v|
+!i113 1
+R11
+R12
+nix@fetch
+vixMem
+R17
+!i10b 1
+!s100 KCHYY6bz_dY@JHUBVjn=G3
+R1
+Ika2GELa`5`o^7XKHQGaWS3
+R2
+R3
+R18
+R19
+R20
+!i122 37
+Z24 L0 1 24
+R7
+r1
+!s85 0
+31
+R21
+R22
+R23
+!i113 1
+R11
+R12
+nix@mem
+vmem
+R0
+!i10b 1
+!s100 SFA@7@4oiF_ehk_]bnfk:2
+R1
+ID8QO^=CZeMR:lT]U4<`;d3
+R2
+R3
+Z25 w1753574489
+Z26 8memory.v
+Z27 Fmemory.v
+!i122 78
+R24
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vMem
+Z28 !s110 1753573774
+!i10b 1
+!s100 kecNeC@GNBI`V?d?Ge3031
+R1
+Ie1cX=aRPIEaHojfib6dkW1
+R2
+R3
+Z29 w1753572693
+Z30 8/home/jimmy/code/bfX/memory.v
+Z31 F/home/jimmy/code/bfX/memory.v
+!i122 40
+R24
+R7
+r1
+!s85 0
+31
+Z32 !s108 1753573774.000000
+Z33 !s107 /home/jimmy/code/bfX/memory.v|
+Z34 !s90 -reportprogress|300|-work|work|-stats=none|/home/jimmy/code/bfX/memory.v|
+!i113 1
+R11
+R12
+n@mem
+vtb_bfx_memory
+R0
+!i10b 1
+!s100 J56>3f`Jc@][@Vd6Rg[0m1
+R1
+IA[KSh?RIkkWEjT0O:`PDm2
+R2
+R3
+R4
+R5
+R6
+!i122 78
+Z35 L0 32 14
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vtb_decode
+R0
+!i10b 1
+!s100 6]]ZhQ`4JKEM1Rl`F6T1[1
+R1
+IbN_:l1Emz:QOSmFfN5ha32
+R2
+R3
+R13
+R14
+R15
+!i122 78
+L0 15 34
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vtb_ixFetch
+!s110 1753566950
+!i10b 1
+!s100 _RPmleB_0i^A?dm9_8cPa1
+R1
+IgM>g8gnH`g]ge4FTfa_ZO3
+R2
+R3
+w1753484589
+R19
+R20
+!i122 35
+L0 69 35
+R7
+r1
+!s85 0
+31
+!s108 1753566950.000000
+R22
+R23
+!i113 1
+R11
+R12
+ntb_ix@fetch
+vtb_ixMem
+R17
+!i10b 1
+!s100 JomURJNJT;^2P@zSGJbN_2
+R1
+IBEZdB=FFJ?V<jjeb0;F^c3
+R2
+R3
+R18
+R19
+R20
+!i122 37
+L0 37 32
+R7
+r1
+!s85 0
+31
+R21
+R22
+R23
+!i113 1
+R11
+R12
+ntb_ix@mem
+vtb_mem
+R0
+!i10b 1
+!s100 D_zmP`W71;DjO7Ha1T2VF3
+R1
+IZ]P?Kkjd<:zKef<;gT99I2
+R2
+R3
+R25
+R26
+R27
+!i122 78
+Z36 L0 39 32
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vtb_Mem
+R28
+!i10b 1
+!s100 8dP?W>@2Fo5NfhNlE1jmz3
+R1
+IMl52WgP31;g>3<i:>bbN51
+R2
+R3
+R29
+R30
+R31
+!i122 40
+R36
+R7
+r1
+!s85 0
+31
+R32
+R33
+R34
+!i113 1
+R11
+R12
+ntb_@mem
+vtb_memory
+!s110 1753576710
+!i10b 1
+!s100 L9?58`Wnb`e1<O`ngNSNN3
+R1
+IaOR9N@Wj6LdA;=6zJJU323
+R2
+R3
+w1753576698
+R5
+R6
+!i122 75
+R35
+R7
+r1
+!s85 0
+31
+!s108 1753576710.000000
+R9
+R10
+!i113 1
+R11
+R12
