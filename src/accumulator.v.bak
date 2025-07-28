@@ -1,0 +1,49 @@
+module full_adder (
+    input  a,
+    b,
+    cin,
+    output c,
+    o
+);
+  wire i = a ^ b;
+  assign o = cin ^ i;
+  assign c = cin & i | a & b;
+endmodule
+
+module accumulator (
+    input clk,
+    input [15:0] val,
+    input sub,
+    output [15:0] out
+);
+  reg [15:0] rx;
+  assign out = val;
+
+endmodule
+
+module tb_adder ();
+  reg a, b, cin;
+  wire c, o;
+
+  full_adder f (
+      a,
+      b,
+      cin,
+      c,
+      o
+  );
+
+  initial begin
+    a   = 0;
+    b   = 0;
+    cin = 0;
+
+    #10 a = 1;
+    #10 cin = 1;
+    #10 b = 1;
+    #10 a = 0;
+    #10 cin = 0;
+  end
+
+
+endmodule
