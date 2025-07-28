@@ -11,8 +11,8 @@ module decode (
   assign dataCounter = ~(ix[3] | ix[2] | ix[1]);
   assign data = ~(ix[3] | ix[2]) & ix[1];
   assign io = ~(ix[3] | ix[1]) & ix[2];
-  assign branch = ~ix[3] & ix[2] & ix[1];
-  assign stop = ix[3] & ~(ix[2] | ix[1] | ix[0]);
+  assign branch = ix[3] & ~ix[2] & ~ix[1];
+  assign stop = &ix;
   assign mode = ix[0];
 
 endmodule
