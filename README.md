@@ -30,8 +30,8 @@ The PC starts at address 0, and the BF data pointer is initialized to byte 256
 |--------|----------|-------------|----------------------------------|
 | x      | xxxx0000 | >           | increment data pointer           |
 | x      | xxxx0001 | <           | decrement data pointer           |
-|        | xxxx0010 | +           | increment byte at data pointer   |
-|        | xxxx0011 | -           | decrement byte at data pointer   |
+| x      | xxxx0010 | +           | increment byte at data pointer   |
+| x      | xxxx0011 | -           | decrement byte at data pointer   |
 |        | xxxx0100 | .           | output byte to bus               |
 |        | xxxx0101 | ,           | input byte to bus                |
 |        | xxxx1000 | {           | loop forward until }             |

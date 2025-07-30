@@ -1,12 +1,12 @@
-`include <adder.v>
-`include <decode.v>
-`include <memory.v>
-`include <mux.v>
+`include "adder.v"
+`include "decode.v"
+`include "memory.v"
+`include "mux.v"
 
 module bfX (
     input clk,
     input [7:0] in,
-    output [15:0] out,
+    output [7:0] currIX,
     output [15:0] dcout,
     output [15:0] dtout,
     output [15:0] pcout
@@ -42,6 +42,8 @@ module bfX (
 
   always @(posedge clk) begin
     pc = pc + 1;
+  end
+  always @(*) begin
     dt = dtFetch;
   end
 
@@ -78,22 +80,21 @@ module bfX (
       addsubout
   );
 
-  reg [15:0] newdc;
-  reg [ 7:0] newdt;
+  // debug wires
   assign dcout = dc;
   assign dtout = dt;
 
-  always @(posedge clk) begin
+  assign writeEnable = modifyData;
+  assign dtWrite = addsubout;
 
-    if (modifyData) newdt = addsubout;
+  always @(negedge clk) begin
     if (modifyDC) begin
-      newdc = addsubout;
-      dc = newdc;
+      dc = addsubout;
     end
 
   end
 
-  assign out = dc;
+  assign currIX = {8'h0, ixFetch};
 
   initial begin
     pc = 16'h0;
@@ -107,17 +108,17 @@ module tb_bfx ();
 
   reg clk;
   reg [7:0] in;
-  wire [15:0] out;
+  wire [7:0] currInstruction;
   wire [15:0] pc;
-  wire [15:0] dcout;
-  wire [15:0] dtout;
+  wire [15:0] dataPointer;
+  wire [15:0] data;
 
   bfX bfx (
       clk,
       in,
-      out,
-      dcout,
-      dtout,
+      currInstruction,
+      dataPointer,
+      data,
       pc
   );
 
