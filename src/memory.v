@@ -31,7 +31,7 @@ module tb_mem ();
   reg wsel;
   reg [15:0] addr1;
   reg [15:0] addr2;
-  reg [15:0] addr2;
+  reg [15:0] writeaddr;
   reg [7:0] in;
   wire [7:0] out1;
   wire [7:0] out2;
