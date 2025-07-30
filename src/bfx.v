@@ -8,15 +8,17 @@ module bfX (
     input [7:0] in,
     output [7:0] currIX,
     output [15:0] dcout,
+    output [15:0] ndcout,
     output [15:0] dtout,
-    output [15:0] pcout
+    output [15:0] pcout,
+    output mDCFlagO
 );
 
   reg [15:0] pc;
   assign pcout = pc;
 
   wire writeEnable;
-  wire [15:0] dtaddr;
+  reg [15:0] dtaddr;
   wire [15:0] ixaddr;
   wire [7:0] dtWrite;
   wire [7:0] dtFetch;
@@ -24,27 +26,32 @@ module bfX (
 
   assign ixaddr = pc;
 
-
   reg [15:0] dc;
+  reg [15:0] nextdc;
   reg [ 7:0] dt;
 
-  assign dtaddr = dc;
+  always @(posedge clk) begin
+    pc <= pc + 1;
+    dc <= nextdc;
+  end
+
+  assign ndcout = nextdc;
+
+  assign dtaddr = nextdc;
 
   mem memory (
       clk,
       writeEnable,
       dtaddr,
       ixaddr,
+      dc,
       dtWrite,
       dtFetch,
       ixFetch
   );
 
-  always @(posedge clk) begin
-    pc = pc + 1;
-  end
   always @(*) begin
-    dt = dtFetch;
+    dt <= dtFetch;
   end
 
   wire modifyDC, modifyData, io, branch, stop, mode;
@@ -87,10 +94,13 @@ module bfX (
   assign writeEnable = modifyData;
   assign dtWrite = addsubout;
 
-  always @(negedge clk) begin
-    if (modifyDC) begin
-      dc = addsubout;
-    end
+  reg mDCFlag;
+  assign mDCFlag  = modifyDC;
+  assign mDCFlagO = mDCFlag;
+
+  always @(*) begin
+    if (mDCFlag) nextdc = addsubout;
+    else nextdc = dc;
 
   end
 
@@ -100,6 +110,7 @@ module bfX (
     pc = 16'h0;
     dc = 16'h100;
     dt = 16'h100;
+    mDCFlag = 1'b0;
   end
 
 endmodule
@@ -109,17 +120,21 @@ module tb_bfx ();
   reg clk;
   reg [7:0] in;
   wire [7:0] currInstruction;
-  wire [15:0] pc;
   wire [15:0] dataPointer;
+  wire [15:0] nextdataPointer;
   wire [15:0] data;
+  wire [15:0] pc;
+  wire mDCF;
 
   bfX bfx (
       clk,
       in,
       currInstruction,
       dataPointer,
+      nextdataPointer,
       data,
-      pc
+      pc,
+      mDCF
   );
 
   always #5 clk = ~clk;

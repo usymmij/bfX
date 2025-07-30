@@ -1,14 +1,13 @@
-/*
-second channel is read only (for instruction fetching)
-*/
 module mem (
     input clk,
     input writeEnable,
     input [15:0] addr1,
     input [15:0] addr2,
+    input [15:0] writeaddr,
     input [7:0] writeData,
     output reg [7:0] out1,
     output reg [7:0] out2
+
 );
   reg [7:0] mem_bank[511:0];
 
@@ -23,7 +22,7 @@ module mem (
     out2 = mem_bank[addr2];
   end
 
-  always @(negedge clk) if (writeEnable) mem_bank[addr1] = writeData;
+  always @(negedge clk) if (writeEnable) mem_bank[writeaddr] = writeData;
 
 endmodule
 
@@ -31,6 +30,7 @@ module tb_mem ();
   reg clk;
   reg wsel;
   reg [15:0] addr1;
+  reg [15:0] addr2;
   reg [15:0] addr2;
   reg [7:0] in;
   wire [7:0] out1;
@@ -41,6 +41,7 @@ module tb_mem ();
       .writeEnable(wsel),
       .addr1(addr1),
       .addr2(addr2),
+      .writeaddr(writeaddr),
       .writeData(in),
       .out1(out1),
       .out2(out2)

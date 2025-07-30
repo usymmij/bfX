@@ -10,7 +10,7 @@ z2
 cModel Technology
 d/home/jimmy
 vadder_16
-Z0 !s110 1753854079
+Z0 !s110 1753857345
 !i10b 1
 !s100 UB==MNXe86Mf8Vd]f;9Oi0
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -20,13 +20,13 @@ Z3 d/home/jimmy/code/bfX
 Z4 w1753801086
 Z5 8/home/jimmy/code/bfX/src/adder.v
 Z6 F/home/jimmy/code/bfX/src/adder.v
-!i122 388
+!i122 498
 L0 73 40
 Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1753854079.000000
+Z8 !s108 1753857344.000000
 !s107 /home/jimmy/code/bfX/src/adder.v|
 Z9 !s90 -reportprogress|300|-work|work|-stats=none|/home/jimmy/code/bfX/src/adder.v|
 !i113 1
@@ -43,7 +43,7 @@ R3
 R4
 R5
 R6
-!i122 388
+!i122 498
 L0 33 39
 R7
 r1
@@ -66,7 +66,7 @@ R3
 R4
 R5
 R6
-!i122 388
+!i122 498
 Z13 L0 1 19
 R7
 r1
@@ -79,25 +79,25 @@ R9
 R10
 R11
 vbfX
-Z14 !s110 1753854078
+Z14 !s110 1753857344
 !i10b 1
-!s100 KWGSEG>1YHQ2ZjQUz^4dg3
+!s100 ;BW@F4TdUOOa>PUcoU>[z1
 R1
-IS0zX_J1jl2b_TCY:TnO3j2
+I2UZ_mJSU6;6;O_TBgH5]o0
 R2
 R3
-Z15 w1753854072
+Z15 w1753857340
 Z16 8/home/jimmy/code/bfX/src/bfx.v
 Z17 F/home/jimmy/code/bfX/src/bfx.v
-!i122 384
-L0 6 100
+!i122 494
+L0 6 111
 R7
 r1
 !s85 0
 31
-Z18 !s108 1753854078.000000
-Z19 !s107 /home/jimmy/code/bfX/src/mux.v|/home/jimmy/code/bfX/src/memory.v|/home/jimmy/code/bfX/src/decode.v|/home/jimmy/code/bfX/src/adder.v|/home/jimmy/code/bfX/src/bfx.v|
-Z20 !s90 -reportprogress|300|-work|work|-stats=none|/home/jimmy/code/bfX/src/bfx.v|
+R8
+Z18 !s107 /home/jimmy/code/bfX/src/mux.v|/home/jimmy/code/bfX/src/memory.v|/home/jimmy/code/bfX/src/decode.v|/home/jimmy/code/bfX/src/adder.v|/home/jimmy/code/bfX/src/bfx.v|
+Z19 !s90 -reportprogress|300|-work|work|-stats=none|/home/jimmy/code/bfX/src/bfx.v|
 !i113 1
 R10
 R11
@@ -110,18 +110,18 @@ R1
 I8ZSY9K:8hg^j6KLgBOAZh0
 R2
 R3
-Z21 w1753788112
-Z22 8/home/jimmy/code/bfX/src/decode.v
-Z23 F/home/jimmy/code/bfX/src/decode.v
-!i122 385
+Z20 w1753788112
+Z21 8/home/jimmy/code/bfX/src/decode.v
+Z22 F/home/jimmy/code/bfX/src/decode.v
+!i122 495
 L0 1 18
 R7
 r1
 !s85 0
 31
-R18
-Z24 !s107 /home/jimmy/code/bfX/src/decode.v|
-Z25 !s90 -reportprogress|300|-work|work|-stats=none|/home/jimmy/code/bfX/src/decode.v|
+R8
+Z23 !s107 /home/jimmy/code/bfX/src/decode.v|
+Z24 !s90 -reportprogress|300|-work|work|-stats=none|/home/jimmy/code/bfX/src/decode.v|
 !i113 1
 R10
 R11
@@ -136,7 +136,7 @@ R3
 R4
 R5
 R6
-!i122 388
+!i122 498
 L0 21 11
 R7
 r1
@@ -151,28 +151,28 @@ R11
 vmem
 R14
 !i10b 1
-!s100 Y;P=ND6ALIS^BAaa54XL12
+!s100 fFIh?VHGl60bzC0_7;>zm3
 R1
-IX<2FjKYO>m<3S6jAg?djY1
+I:5Od<[oK:7P15455J[W1G1
 R2
 R3
-Z26 w1753850318
-Z27 8/home/jimmy/code/bfX/src/memory.v
-Z28 F/home/jimmy/code/bfX/src/memory.v
-!i122 386
-L0 4 25
+w1753857090
+Z25 8/home/jimmy/code/bfX/src/memory.v
+Z26 F/home/jimmy/code/bfX/src/memory.v
+!i122 496
+L0 1 27
 R7
 r1
 !s85 0
 31
-R18
-Z29 !s107 /home/jimmy/code/bfX/src/memory.v|
-Z30 !s90 -reportprogress|300|-work|work|-stats=none|/home/jimmy/code/bfX/src/memory.v|
+R8
+Z27 !s107 /home/jimmy/code/bfX/src/memory.v|
+Z28 !s90 -reportprogress|300|-work|work|-stats=none|/home/jimmy/code/bfX/src/memory.v|
 !i113 1
 R10
 R11
 vmux_4_1_16bit
-R0
+R14
 !i10b 1
 !s100 `QKFMS`H@3l8MRdU8mTX61
 R1
@@ -182,13 +182,13 @@ R3
 w1753802034
 8/home/jimmy/code/bfX/src/mux.v
 F/home/jimmy/code/bfX/src/mux.v
-!i122 387
+!i122 497
 R13
 R7
 r1
 !s85 0
 31
-R18
+R8
 !s107 /home/jimmy/code/bfX/src/mux.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/jimmy/code/bfX/src/mux.v|
 !i113 1
@@ -205,7 +205,7 @@ R3
 R4
 R5
 R6
-!i122 388
+!i122 498
 L0 113 35
 R7
 r1
@@ -228,7 +228,7 @@ R3
 R4
 R5
 R6
-!i122 388
+!i122 498
 L0 149 34
 R7
 r1
@@ -243,23 +243,23 @@ R11
 vtb_bfx
 R14
 !i10b 1
-!s100 EXn@U`_a@MCOINgjc@`C73
+!s100 W1@KG6[2><]X;GXbJDlOF0
 R1
-I>@_h9lK=lP3>LZc9zUeN91
+IY>akJWOoWj[VT_G3J@e3E0
 R2
 R3
 R15
 R16
 R17
-!i122 384
-L0 107 26
+!i122 494
+L0 118 30
 R7
 r1
 !s85 0
 31
+R8
 R18
 R19
-R20
 !i113 1
 R10
 R11
@@ -271,41 +271,41 @@ R1
 I6D5?5Kk6He@b0Aae:0zac2
 R2
 R3
+R20
 R21
 R22
-R23
-!i122 385
+!i122 495
 L0 20 33
 R7
 r1
 !s85 0
 31
-R18
+R8
+R23
 R24
-R25
 !i113 1
 R10
 R11
 vtb_mem
-R14
+!s110 1753856871
 !i10b 1
 !s100 1kHZdU8dYQO>H`Y<2[LBV1
 R1
 IY=08[C:57ZPZ>8A`@Q2mN3
 R2
 R3
+w1753856681
+R25
 R26
-R27
-R28
-!i122 386
+!i122 486
 L0 30 49
 R7
 r1
 !s85 0
 31
-R18
-R29
-R30
+!s108 1753856871.000000
+R27
+R28
 !i113 1
 R10
 R11
