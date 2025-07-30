@@ -1,108 +1,78 @@
+/*
+second channel is read only (for instruction fetching)
+*/
 module mem (
     input clk,
-    input activeSel,
-    input readSel,
-    input reg [15:0] addr,
-    input reg [7:0] data,
-    output reg [7:0] out
+    input writeEnable,
+    input [15:0] addr1,
+    input [15:0] addr2,
+    input [7:0] writeData,
+    output reg [7:0] out1,
+    output reg [7:0] out2
 );
-    reg [7:0] mem_bank [511:0];
+  reg [7:0] mem_bank[511:0];
 
-    initial begin 
-        $readmemh("code.txt",mem_bank);
-    end
+  integer i;
+  initial begin
+    $readmemh("code.txt", mem_bank, 0, 256);
+    for (i = 256; i < 512; i = i + 1) mem_bank[i] = 8'h0;
+  end
 
-    always @ (posedge clk) begin
-        if (activeSel) begin
-            if (readSel) 
-                out = mem_bank[addr];
-            else 
-                mem_bank[addr] = data;
-        end
-    end
+  always @(posedge clk) begin
+    if (writeEnable) mem_bank[addr1] = writeData;
+    out1 = mem_bank[addr1];
+    out2 = mem_bank[addr2];
+  end
 
 endmodule
-
-// fetching from memory
-/*
-module ixFetch(
-    input clk,
-    input reg [7:0] programCounter,
-    output [7:0] instruction
-);
-
-    mem memory (clk, 0'b1, 0'b1, programCounter, 8'h0, instruction);
-
-endmodule
-*/
 
 module tb_mem ();
-    reg clk;
-    reg aSel, rSel;
-    reg [15:0] addr;
-    reg [7:0] in;
-    wire [7:0] out;
+  reg clk;
+  reg wsel;
+  reg [15:0] addr1;
+  reg [15:0] addr2;
+  reg [7:0] in;
+  wire [7:0] out1;
+  wire [7:0] out2;
 
-    mem test (clk, aSel, rSel, addr, in, out);
+  mem mem_dut (
+      .clk(clk),
+      .writeEnable(wsel),
+      .addr1(addr1),
+      .addr2(addr2),
+      .writeData(in),
+      .out1(out1),
+      .out2(out2)
+  );
 
-    always #5 clk = ~clk;
+  always #5 clk = ~clk;
 
-    initial begin
-        clk <= 0;
-    	in <= 8'h0;
-        aSel <= 0;
-        rSel <= 0;
-        #4
-        in <= 8'h1;
-        #10
-        in <= 8'h2;
-        aSel <= 1;
-        addr <= 16'h12;
-        #10
-        rSel <= 1;
-        in <= 8'h10;
-        addr <= 16'h13;
-        #10
-        addr <= 16'h12;
+  initial begin
+    clk <= 0;
+    wsel <= 0;
+    addr1 <= 16'h0;
+    addr2 <= 16'h1;
+    in <= 8'h0;
 
-    end
+    #10 addr1 = 15'h2;
+    addr2 = 15'h3;
+    #10 addr1 = 15'h4;
+    addr2 = 15'h5;
+    #10 addr1 = 15'h6;
+    addr2 = 15'h7;
+    #10 addr1 = 15'h8;
+    addr2 = 15'h9;
+    #10 addr1 = 15'ha;
+    addr2 = 15'hb;
+    #10 wsel = 1;
+    in = 8'hff;
+    addr1 = 15'hc;
+    addr2 = 15'h2;
+    #10 wsel = 1;
+    addr1 = 15'hd;
+    addr2 = 15'hc;
 
-endmodule
-
-/*
-module tb_ixFetch ();
-    reg clk;
-    reg [7:0] pc;
-    wire [7:0] ix;
-
-    ixFetch test (clk, pc, ix);
-
-    always #5 clk = ~clk;
-    initial begin 
-        clk <= 0;
-        #4
-        pc <= 0;
-        #9 
-        pc <= pc + 1;
-        #9 
-        pc <= pc + 1;
-        #9 
-        pc <= pc + 1;
-        #9 
-        pc <= pc + 1;
-        #9 
-        pc <= pc + 1;
-        #9 
-        pc <= pc + 1;
-        #9 
-        pc <= pc + 1;
-        #9 
-        pc <= pc + 1;
-        #9 
-        pc <= pc + 1;
-        #9 
-        pc <= pc + 1;
-    end
+  end
 
 endmodule
-*/
+

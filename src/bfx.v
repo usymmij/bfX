@@ -1,75 +1,130 @@
-`include <memory.v>
+`include <adder.v>
 `include <decode.v>
+`include <memory.v>
+`include <mux.v>
 
 module bfX (
     input clk,
     input [7:0] in,
-    output [7:0] out
+    output [15:0] out,
+    output [15:0] dcout,
+    output [15:0] dtout,
+    output [15:0] pcout
 );
 
   reg [15:0] pc;
+  assign pcout = pc;
 
-  reg memoryActive;
-  reg memoryRSel;
-  wire [15:0] memoryAddr;
-  wire [7:0] memoryWrite;
-  wire [7:0] memoryRead;
+  wire writeEnable;
+  wire [15:0] dtaddr;
+  wire [15:0] ixaddr;
+  wire [7:0] dtWrite;
+  wire [7:0] dtFetch;
+  wire [7:0] ixFetch;
 
-  assign memoryAddr   = pc;
-  assign memoryActive = 1;
-  assign memoryRSel   = 1;
+  assign ixaddr = pc;
+
+
+  reg [15:0] dc;
+  reg [ 7:0] dt;
+
+  assign dtaddr = dc;
 
   mem memory (
       clk,
-      memoryActive,
-      memoryRSel,
-      memoryAddr,
-      memoryWrite,
-      memoryRead
+      writeEnable,
+      dtaddr,
+      ixaddr,
+      dtWrite,
+      dtFetch,
+      ixFetch
   );
 
   always @(posedge clk) begin
     pc = pc + 1;
+    dt = dtFetch;
   end
 
-  wire dataCounter, data, io, branch, stop, mode;
+  wire modifyDC, modifyData, io, branch, stop, mode;
 
   decode ix_decode (
       clk,
-      memoryRead,
-      dataCounter,
-      data,
+      ixFetch,
+      modifyDC,
+      modifyData,
       io,
       branch,
       stop,
       mode
   );
 
-  reg [15:0] dc;
+  wire [15:0] addsubin;
 
-  assign out = {2'h0, dataCounter, data, io, branch, stop, mode};
+  mux_4_1_16bit addsubsel (
+      .a  (16'h0),
+      .b  (dc),
+      .c  ({8'h0, dt}),
+      .d  (16'h0),
+      .sel({modifyData, modifyDC}),
+      .o  (addsubin)
+  );
+
+  wire [15:0] addsubout;
+
+  addersub_16 addsub (
+      addsubin,
+      16'h1,
+      mode,
+      addsubout
+  );
+
+  reg [15:0] newdc;
+  reg [ 7:0] newdt;
+  assign dcout = dc;
+  assign dtout = dt;
+
+  always @(posedge clk) begin
+
+    if (modifyData) newdt = addsubout;
+    if (modifyDC) begin
+      newdc = addsubout;
+      dc = newdc;
+    end
+
+  end
+
+  assign out = dc;
 
   initial begin
     pc = 16'h0;
-    dc = 16'h256;
+    dc = 16'h100;
+    dt = 16'h100;
   end
 
 endmodule
 
-module tb_bfx_memory ();
+module tb_bfx ();
 
   reg clk;
   reg [7:0] in;
-  wire [7:0] out;
+  wire [15:0] out;
+  wire [15:0] pc;
+  wire [15:0] dcout;
+  wire [15:0] dtout;
+
   bfX bfx (
       clk,
       in,
-      out
+      out,
+      dcout,
+      dtout,
+      pc
   );
 
   always #5 clk = ~clk;
 
   initial begin
+    in  = 0;
     clk = 0;
   end
 

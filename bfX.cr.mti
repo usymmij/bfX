@@ -1,27 +1,23 @@
-/home/jimmy/code/bfX/src/accumulator.v {1 {vlog -work work -stats=none /home/jimmy/code/bfX/src/accumulator.v
+/home/jimmy/code/bfX/src/adder.v {1 {vlog -work work -stats=none /home/jimmy/code/bfX/src/adder.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module addersub_16
 -- Compiling module full_adder
 -- Compiling module adder_4
--- Compiling module accumulator
+-- Compiling module adder_16
 -- Compiling module tb_adder
+-- Compiling module tb_addersub
 
 Top level modules:
-	accumulator
 	tb_adder
+	tb_addersub
 
-} {} {}} /home/jimmy/code/bfX/src/bfx.v {1 {vlog -work work -stats=none /home/jimmy/code/bfX/src/bfx.v
+} {} {}} /home/jimmy/code/bfX/src/decode.v {1 {vlog -work work -stats=none /home/jimmy/code/bfX/src/decode.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module mem
--- Compiling module tb_mem
 -- Compiling module decode
 -- Compiling module tb_decode
--- Compiling module bfX
--- Compiling module tb_bfx_memory
 
 Top level modules:
-	tb_mem
 	tb_decode
-	tb_bfx_memory
 
 } {} {}} /home/jimmy/code/bfX/src/memory.v {1 {vlog -work work -stats=none /home/jimmy/code/bfX/src/memory.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -30,5 +26,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	tb_mem
+
+} {} {}} /home/jimmy/code/bfX/src/mux.v {1 {vlog -work work -stats=none /home/jimmy/code/bfX/src/mux.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mux_4_1_16bit
+
+Top level modules:
+	mux_4_1_16bit
 
 } {} {}}

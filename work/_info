@@ -1,7 +1,7 @@
 m255
 K4
 z2
-!s11f vlog 2020.1 2020.02, Feb 28 2020
+!s11f MIXED_VERSIONS
 13
 !s112 1.1
 !i10d 8192
@@ -9,48 +9,71 @@ z2
 !i10f 100
 cModel Technology
 d/home/jimmy
-vaccumulator
-Z0 !s110 1753677062
+vadder_16
+Z0 !s110 1753846599
 !i10b 1
-!s100 WiE3>Gczb2:@aN^6Vb@m;0
+!s100 UB==MNXe86Mf8Vd]f;9Oi0
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IG[jioILPoG`PJ3e:N6X3:3
+Ih1^Sngj;ZM?;L4;DQ1XU=0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 Z3 d/home/jimmy/code/bfX
-Z4 w1753677060
-Z5 8/home/jimmy/code/bfX/src/accumulator.v
-Z6 F/home/jimmy/code/bfX/src/accumulator.v
-!i122 184
-L0 54 10
+Z4 w1753801086
+Z5 8/home/jimmy/code/bfX/src/adder.v
+Z6 F/home/jimmy/code/bfX/src/adder.v
+!i122 287
+L0 73 40
 Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1753677062.000000
-!s107 /home/jimmy/code/bfX/src/accumulator.v|
-Z9 !s90 -reportprogress|300|-work|work|-stats=none|/home/jimmy/code/bfX/src/accumulator.v|
+Z8 !s108 1753846599.000000
+!s107 /home/jimmy/code/bfX/src/adder.v|
+Z9 !s90 -reportprogress|300|-work|work|-stats=none|/home/jimmy/code/bfX/src/adder.v|
 !i113 1
 Z10 o-work work
 Z11 tCvgOpt 0
 vadder_4
 R0
 !i10b 1
-!s100 C63ORcc7M3hBUH0j[=>zI2
+!s100 GS@XG>UlQjiDTnLPmP<2Q0
 R1
-IKT?IP@SNO02>L3a9_[Jd33
+I7PE^`eA6c7]I?En_FU@M`2
 R2
 R3
 R4
 R5
 R6
-!i122 184
-L0 13 40
+!i122 287
+L0 33 39
 R7
 r1
 !s85 0
 31
 R8
-Z12 !s107 /home/jimmy/code/bfX/src/accumulator.v|
+Z12 !s107 /home/jimmy/code/bfX/src/adder.v|
+R9
+!i113 1
+R10
+R11
+vaddersub_16
+R0
+!i10b 1
+!s100 ;@ZA@QboUmXYLM680_Yj12
+R1
+IKR`A1<28FX>B040^NTL_60
+R2
+R3
+R4
+R5
+R6
+!i122 287
+Z13 L0 1 19
+R7
+r1
+!s85 0
+31
+R8
+R12
 R9
 !i113 1
 R10
@@ -58,23 +81,23 @@ R11
 vbfX
 R0
 !i10b 1
-!s100 fl`TMFfZ3o?d^=Ye85AaS2
+!s100 `>G]hlWjnPK9FNKZ5XF3X2
 R1
-I_;LPO]icVzNAkgZHk1lgn2
+ICS8G0F4fYGm6I3N0DNSWV3
 R2
 R3
-Z13 w1753672302
-Z14 8/home/jimmy/code/bfX/src/bfx.v
-Z15 F/home/jimmy/code/bfX/src/bfx.v
-!i122 181
-L0 4 54
+Z14 w1753846589
+Z15 8/home/jimmy/code/bfX/src/bfx.v
+Z16 F/home/jimmy/code/bfX/src/bfx.v
+!i122 283
+L0 6 99
 R7
 r1
 !s85 0
 31
 R8
-Z16 !s107 /home/jimmy/code/bfX/src/decode.v|/home/jimmy/code/bfX/src/memory.v|/home/jimmy/code/bfX/src/bfx.v|
-Z17 !s90 -reportprogress|300|-work|work|-stats=none|/home/jimmy/code/bfX/src/bfx.v|
+Z17 !s107 /home/jimmy/code/bfX/src/mux.v|/home/jimmy/code/bfX/src/memory.v|/home/jimmy/code/bfX/src/decode.v|/home/jimmy/code/bfX/src/adder.v|/home/jimmy/code/bfX/src/bfx.v|
+Z18 !s90 -reportprogress|300|-work|work|-stats=none|/home/jimmy/code/bfX/src/bfx.v|
 !i113 1
 R10
 R11
@@ -82,39 +105,39 @@ nbf@x
 vdecode
 R0
 !i10b 1
-!s100 37[F<a;[G2Dh6l0`MEd4a1
+!s100 m42_lfiJdDk8bP1<iTM5L1
 R1
-ICYoT@<OnBJjcE9d9AgE4G2
+I8ZSY9K:8hg^j6KLgBOAZh0
 R2
 R3
-Z18 w1753671423
-Z19 8/home/jimmy/code/bfX/src/decode.v
-Z20 F/home/jimmy/code/bfX/src/decode.v
-!i122 182
+Z19 w1753788112
+Z20 8/home/jimmy/code/bfX/src/decode.v
+Z21 F/home/jimmy/code/bfX/src/decode.v
+!i122 284
 L0 1 18
 R7
 r1
 !s85 0
 31
 R8
-Z21 !s107 /home/jimmy/code/bfX/src/decode.v|
-Z22 !s90 -reportprogress|300|-work|work|-stats=none|/home/jimmy/code/bfX/src/decode.v|
+Z22 !s107 /home/jimmy/code/bfX/src/decode.v|
+Z23 !s90 -reportprogress|300|-work|work|-stats=none|/home/jimmy/code/bfX/src/decode.v|
 !i113 1
 R10
 R11
 vfull_adder
 R0
 !i10b 1
-!s100 NCK<]YF2?6S6iEAbT58b72
+!s100 8i_mQ6;8S1KVR<]7C`D=F0
 R1
-Ih3j2<7MB?S:]^hReA_Sij3
+Iz]K7hiQFZR]9nKkh<mODJ2
 R2
 R3
 R4
 R5
 R6
-!i122 184
-L0 1 11
+!i122 287
+L0 21 11
 R7
 r1
 !s85 0
@@ -125,138 +148,65 @@ R9
 !i113 1
 R10
 R11
-vixDecode
-!s110 1753575378
-!i10b 1
-!s100 dY5L52e6fQ2Q_F?XoM_oY0
-R1
-IH1Xk2eD5;7S9i^PB^g6;W0
-R2
-R3
-w1753573718
-8/home/jimmy/code/bfX/decode.v
-F/home/jimmy/code/bfX/decode.v
-!i122 49
-L0 1 13
-R7
-r1
-!s85 0
-31
-!s108 1753575378.000000
-!s107 /home/jimmy/code/bfX/decode.v|
-!s90 -reportprogress|300|-work|work|-stats=none|/home/jimmy/code/bfX/decode.v|
-!i113 1
-R10
-R11
-nix@decode
-vixFetch
-Z23 !s110 1753569046
-!i10b 1
-!s100 5T_G4dEUUoYVzl[h=V0IB3
-R1
-IzHcFE;lDdHkWI@T^[S6zZ3
-R2
-R3
-Z24 w1753569042
-Z25 8/home/jimmy/code/bfX/work/IF.v
-Z26 F/home/jimmy/code/bfX/work/IF.v
-!i122 37
-L0 27 9
-R7
-r1
-!s85 0
-31
-Z27 !s108 1753569046.000000
-Z28 !s107 /home/jimmy/code/bfX/work/IF.v|
-Z29 !s90 -reportprogress|300|-work|work|-stats=none|/home/jimmy/code/bfX/work/IF.v|
-!i113 1
-R10
-R11
-nix@fetch
-vixMem
-R23
-!i10b 1
-!s100 KCHYY6bz_dY@JHUBVjn=G3
-R1
-Ika2GELa`5`o^7XKHQGaWS3
-R2
-R3
-R24
-R25
-R26
-!i122 37
-Z30 L0 1 24
-R7
-r1
-!s85 0
-31
-R27
-R28
-R29
-!i113 1
-R10
-R11
-nix@mem
 vmem
 R0
 !i10b 1
-!s100 SFA@7@4oiF_ehk_]bnfk:2
+!s100 ]OCDem@fhGEIVM5VBf_zC3
 R1
-IJnWleG`6baZi2Oj^<o_lz1
+IYmHm4TKeL8gXD7_V`:7b32
 R2
 R3
-Z31 w1753658568
-Z32 8/home/jimmy/code/bfX/src/memory.v
-Z33 F/home/jimmy/code/bfX/src/memory.v
-!i122 183
-R30
+Z24 w1753806438
+Z25 8/home/jimmy/code/bfX/src/memory.v
+Z26 F/home/jimmy/code/bfX/src/memory.v
+!i122 285
+L0 4 24
 R7
 r1
 !s85 0
 31
 R8
-Z34 !s107 /home/jimmy/code/bfX/src/memory.v|
-Z35 !s90 -reportprogress|300|-work|work|-stats=none|/home/jimmy/code/bfX/src/memory.v|
+Z27 !s107 /home/jimmy/code/bfX/src/memory.v|
+Z28 !s90 -reportprogress|300|-work|work|-stats=none|/home/jimmy/code/bfX/src/memory.v|
 !i113 1
 R10
 R11
-vMem
-Z36 !s110 1753573774
+vmux_4_1_16bit
+R0
 !i10b 1
-!s100 kecNeC@GNBI`V?d?Ge3031
+!s100 `QKFMS`H@3l8MRdU8mTX61
 R1
-Ie1cX=aRPIEaHojfib6dkW1
+I4RN7C63EoGghZzDg?fU><2
 R2
 R3
-Z37 w1753572693
-Z38 8/home/jimmy/code/bfX/memory.v
-Z39 F/home/jimmy/code/bfX/memory.v
-!i122 40
-R30
+w1753802034
+8/home/jimmy/code/bfX/src/mux.v
+F/home/jimmy/code/bfX/src/mux.v
+!i122 286
+R13
 R7
 r1
 !s85 0
 31
-Z40 !s108 1753573774.000000
-Z41 !s107 /home/jimmy/code/bfX/memory.v|
-Z42 !s90 -reportprogress|300|-work|work|-stats=none|/home/jimmy/code/bfX/memory.v|
+R8
+!s107 /home/jimmy/code/bfX/src/mux.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/jimmy/code/bfX/src/mux.v|
 !i113 1
 R10
 R11
-n@mem
 vtb_adder
 R0
 !i10b 1
-!s100 Fj20j2gKLOnC7kTdG7TNV2
+!s100 UdV0XPCGk@EgK]:;==FQ32
 R1
-IBLX<k[9YV5@42EXSA<U:52
+Iin=>P[L6FcDZ670I??V<n2
 R2
 R3
 R4
 R5
 R6
-!i122 184
-L0 65 35
+!i122 287
+L0 113 35
 R7
 r1
 !s85 0
@@ -267,26 +217,49 @@ R9
 !i113 1
 R10
 R11
-vtb_bfx_memory
+vtb_addersub
 R0
 !i10b 1
-!s100 RFo@SKg]>^8BD786SkP953
+!s100 dLmX[C:EV42i]LgfZkHS90
 R1
-I=2KY?RkLXc]9]B>NXhF>Q0
+IkJAikSDIK]ob=e1b]DWcf2
 R2
 R3
-R13
-R14
-R15
-!i122 181
-L0 59 18
+R4
+R5
+R6
+!i122 287
+L0 149 34
 R7
 r1
 !s85 0
 31
 R8
+R12
+R9
+!i113 1
+R10
+R11
+vtb_bfx
+R0
+!i10b 1
+!s100 WTfN4L@<DN<AD40H?kR773
+R1
+IJKAOON;?mX=nY>Z;e;LfZ1
+R2
+R3
+R14
+R15
 R16
+!i122 283
+L0 106 26
+R7
+r1
+!s85 0
+31
+R8
 R17
+R18
 !i113 1
 R10
 R11
@@ -298,136 +271,41 @@ R1
 I6D5?5Kk6He@b0Aae:0zac2
 R2
 R3
-R18
 R19
 R20
-!i122 182
+R21
+!i122 284
 L0 20 33
 R7
 r1
 !s85 0
 31
 R8
-R21
 R22
-!i113 1
-R10
-R11
-vtb_ixFetch
-!s110 1753566950
-!i10b 1
-!s100 _RPmleB_0i^A?dm9_8cPa1
-R1
-IgM>g8gnH`g]ge4FTfa_ZO3
-R2
-R3
-w1753484589
-R25
-R26
-!i122 35
-L0 69 35
-R7
-r1
-!s85 0
-31
-!s108 1753566950.000000
-R28
-R29
-!i113 1
-R10
-R11
-ntb_ix@fetch
-vtb_ixMem
 R23
+!i113 1
+R10
+R11
+vtb_mem
+R0
 !i10b 1
-!s100 JomURJNJT;^2P@zSGJbN_2
+!s100 VkHoLSm<V2<J`S;<ENUQl2
 R1
-IBEZdB=FFJ?V<jjeb0;F^c3
+I`QDO1PZc_T_CFNe`5oz;i3
 R2
 R3
 R24
 R25
 R26
-!i122 37
-L0 37 32
-R7
-r1
-!s85 0
-31
-R27
-R28
-R29
-!i113 1
-R10
-R11
-ntb_ix@mem
-vtb_mem
-R0
-!i10b 1
-!s100 D_zmP`W71;DjO7Ha1T2VF3
-R1
-IcSa7A`Y=L@zKZ:A`CYC6o2
-R2
-R3
-R31
-R32
-R33
-!i122 183
-Z43 L0 39 32
+!i122 285
+L0 29 49
 R7
 r1
 !s85 0
 31
 R8
-R34
-R35
-!i113 1
-R10
-R11
-vtb_Mem
-R36
-!i10b 1
-!s100 8dP?W>@2Fo5NfhNlE1jmz3
-R1
-IMl52WgP31;g>3<i:>bbN51
-R2
-R3
-R37
-R38
-R39
-!i122 40
-R43
-R7
-r1
-!s85 0
-31
-R40
-R41
-R42
-!i113 1
-R10
-R11
-ntb_@mem
-vtb_memory
-!s110 1753576710
-!i10b 1
-!s100 L9?58`Wnb`e1<O`ngNSNN3
-R1
-IaOR9N@Wj6LdA;=6zJJU323
-R2
-R3
-w1753576698
-8/home/jimmy/code/bfX/bfx.v
-F/home/jimmy/code/bfX/bfx.v
-!i122 75
-L0 32 14
-R7
-r1
-!s85 0
-31
-!s108 1753576710.000000
-!s107 decode.v|memory.v|/home/jimmy/code/bfX/bfx.v|
-!s90 -reportprogress|300|-work|work|-stats=none|/home/jimmy/code/bfX/bfx.v|
+R27
+R28
 !i113 1
 R10
 R11
