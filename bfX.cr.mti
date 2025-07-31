@@ -1,4 +1,34 @@
-/home/jimmy/code/bfX/src/adder.v {1 {vlog -work work -stats=none /home/jimmy/code/bfX/src/adder.v
+/home/jimmy/code/bfX/src/bfx.v {1 {vlog -work work -stats=none /home/jimmy/code/bfX/src/bfx.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module addersub_16
+-- Compiling module full_adder
+-- Compiling module adder_4
+-- Compiling module adder_16
+-- Compiling module tb_adder
+-- Compiling module tb_addersub
+-- Compiling module decode
+-- Compiling module tb_decode
+-- Compiling module mem
+-- Compiling module tb_mem
+-- Compiling module mux_4_1_16bit
+-- Compiling module mux_2_1_8bit
+-- Compiling module inputbus
+-- Compiling module outputbus
+-- Compiling module tb_input
+-- Compiling module tb_output
+-- Compiling module bfX
+-- Compiling module tb_bfx
+
+Top level modules:
+	tb_adder
+	tb_addersub
+	tb_decode
+	tb_mem
+	tb_input
+	tb_output
+	tb_bfx
+
+} {} {}} /home/jimmy/code/bfX/src/adder.v {1 {vlog -work work -stats=none /home/jimmy/code/bfX/src/adder.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module addersub_16
 -- Compiling module full_adder
@@ -10,17 +40,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	tb_adder
 	tb_addersub
-
-} {} {}} /home/jimmy/code/bfX/src/io.v {1 {vlog -work work -stats=none /home/jimmy/code/bfX/src/io.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module inputbus
--- Compiling module outputbus
--- Compiling module tb_input
--- Compiling module tb_output
-
-Top level modules:
-	tb_input
-	tb_output
 
 } {} {}} /home/jimmy/code/bfX/src/decode.v {1 {vlog -work work -stats=none /home/jimmy/code/bfX/src/decode.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020

@@ -88,7 +88,6 @@ module bfX (
   assign dtout = dt;
 
   assign writeEnable = modifyData | (io & mode);
-  assign dtWrite = addsubout;
 
   reg mDCFlag;
   assign mDCFlag = modifyDC;
@@ -99,6 +98,13 @@ module bfX (
   end
 
   wire [7:0] inbyte;
+
+  mux_2_1_8bit writemux (
+      addsubout,
+      inbyte,
+      io & mode,
+      dtWrite
+  );
 
   inputbus inbus (
       io & mode,

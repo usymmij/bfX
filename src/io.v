@@ -20,7 +20,7 @@ module inputbus (
   end
 
   initial begin
-    $readmemh("input.txt", inputqueue);
+    $readmemh("input.txt", inputqueue, 1);
   end
 
 endmodule

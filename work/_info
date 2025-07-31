@@ -10,7 +10,7 @@ z2
 cModel Technology
 d/home/jimmy
 vadder_16
-Z0 !s110 1753940096
+Z0 !s110 1753989883
 !i10b 1
 !s100 M]bcZmjgeSzK2e8OLKh511
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -20,13 +20,13 @@ Z3 d/home/jimmy/code/bfX
 Z4 w1753934737
 Z5 8/home/jimmy/code/bfX/src/adder.v
 Z6 F/home/jimmy/code/bfX/src/adder.v
-!i122 786
+!i122 828
 L0 75 40
 Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1753940096.000000
+Z8 !s108 1753989883.000000
 Z9 !s107 /home/jimmy/code/bfX/src/adder.v|
 Z10 !s90 -reportprogress|300|-work|work|-stats=none|/home/jimmy/code/bfX/src/adder.v|
 !i113 1
@@ -43,7 +43,7 @@ R3
 R4
 R5
 R6
-!i122 786
+!i122 828
 L0 35 39
 R7
 r1
@@ -66,7 +66,7 @@ R3
 R4
 R5
 R6
-!i122 786
+!i122 828
 L0 1 21
 R7
 r1
@@ -81,16 +81,16 @@ R12
 vbfX
 R0
 !i10b 1
-!s100 7>NZ=M^K2N<nYCjbCT3@C3
+!s100 @mkLEBATjM]n;lDaF?W[?3
 R1
-I[WJl0MBJRRYc3`DO3U?6f3
+IU[T87EL9iQUWMHKRK6J<O1
 R2
 R3
-Z13 w1753939977
+Z13 w1753989792
 Z14 8/home/jimmy/code/bfX/src/bfx.v
 Z15 F/home/jimmy/code/bfX/src/bfx.v
-!i122 782
-L0 7 115
+!i122 824
+L0 7 121
 R7
 r1
 !s85 0
@@ -113,7 +113,7 @@ R3
 Z18 w1753788112
 Z19 8/home/jimmy/code/bfX/src/decode.v
 Z20 F/home/jimmy/code/bfX/src/decode.v
-!i122 783
+!i122 825
 L0 1 18
 R7
 r1
@@ -136,7 +136,7 @@ R3
 R4
 R5
 R6
-!i122 786
+!i122 828
 L0 23 11
 R7
 r1
@@ -151,15 +151,15 @@ R12
 vinputbus
 R0
 !i10b 1
-!s100 XLzg3VPgDQZAgLgZ0?jS51
+!s100 <i^QEZImA]WhnHQ7O^Vng1
 R1
-I9RM@EcYHNi[0V[8m35^=B3
+I:kDdLNofJ7b3IY2clTWWg2
 R2
 R3
-Z23 w1753934399
+Z23 w1753989873
 Z24 8/home/jimmy/code/bfX/src/io.v
 Z25 F/home/jimmy/code/bfX/src/io.v
-!i122 787
+!i122 829
 L0 3 24
 R7
 r1
@@ -182,7 +182,7 @@ R3
 Z27 w1753939838
 Z28 8/home/jimmy/code/bfX/src/memory.v
 Z29 F/home/jimmy/code/bfX/src/memory.v
-!i122 784
+!i122 826
 L0 1 27
 R7
 r1
@@ -205,7 +205,7 @@ R3
 Z32 w1753934820
 Z33 8/home/jimmy/code/bfX/src/mux.v
 Z34 F/home/jimmy/code/bfX/src/mux.v
-!i122 785
+!i122 827
 L0 21 15
 R7
 r1
@@ -228,7 +228,7 @@ R3
 R32
 R33
 R34
-!i122 785
+!i122 827
 L0 1 19
 R7
 r1
@@ -251,7 +251,7 @@ R3
 R23
 R24
 R25
-!i122 787
+!i122 829
 L0 28 19
 R7
 r1
@@ -274,7 +274,7 @@ R3
 R4
 R5
 R6
-!i122 786
+!i122 828
 L0 115 35
 R7
 r1
@@ -297,7 +297,7 @@ R3
 R4
 R5
 R6
-!i122 786
+!i122 828
 L0 151 34
 R7
 r1
@@ -312,16 +312,16 @@ R12
 vtb_bfx
 R0
 !i10b 1
-!s100 lD?Jcn05_j=PcIP5ln4QU1
+!s100 X8F5YCWhSAkegT1o1FY^M2
 R1
-I>:aUI7encLi1cmEEYRBG03
+IjHWi32^`L@n9<P_m<>XnM1
 R2
 R3
 R13
 R14
 R15
-!i122 782
-L0 123 23
+!i122 824
+L0 129 23
 R7
 r1
 !s85 0
@@ -343,7 +343,7 @@ R3
 R18
 R19
 R20
-!i122 783
+!i122 825
 L0 20 33
 R7
 r1
@@ -366,7 +366,7 @@ R3
 R23
 R24
 R25
-!i122 787
+!i122 829
 L0 48 14
 R7
 r1
@@ -389,7 +389,7 @@ R3
 R27
 R28
 R29
-!i122 784
+!i122 826
 L0 29 51
 R7
 r1
@@ -412,7 +412,7 @@ R3
 R23
 R24
 R25
-!i122 787
+!i122 829
 L0 63 24
 R7
 r1
