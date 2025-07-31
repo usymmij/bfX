@@ -18,4 +18,20 @@ module mux_4_1_16bit (
 
 endmodule
 
+module mux_2_1_8bit (
+    input [7:0] a,
+    input [7:0] b,
+    input sel,
+    output reg [7:0] o
+);
+
+  always @(*) begin
+    case (sel)
+      1'h0: o = a;
+      1'h1: o = b;
+    endcase
+  end
+
+endmodule
+
 

@@ -17,7 +17,7 @@ an 8-bit CISC microarch that uses brainf*ck as the core of the instruction set
 | 11111111 |             | end of code (HALT)             |
 > the `{` and `}` instructions force the ISA to become CISC since it must loop 
 
-## Memory map
+## Memory
 
 512B memory, which is shared by both instructions and data
 
@@ -32,7 +32,7 @@ The PC starts at address 0, and the BF data pointer is initialized to byte 256
 | x      | xxxx0001 | <           | decrement data pointer           |
 | x      | xxxx0010 | +           | increment byte at data pointer   |
 | x      | xxxx0011 | -           | decrement byte at data pointer   |
-|        | xxxx0100 | .           | output byte to bus               |
+| x      | xxxx0100 | .           | output byte to bus               |
 |        | xxxx0101 | ,           | input byte to bus                |
 |        | xxxx1000 | {           | loop forward until }             |
 |        | xxxx1001 | }           | loop backward until {            |

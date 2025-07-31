@@ -18,8 +18,8 @@ module mem (
   end
 
   always @(posedge clk) begin
-    out1 = mem_bank[addr1];
-    out2 = mem_bank[addr2];
+    out1 <= mem_bank[addr1];
+    out2 <= mem_bank[addr2];
   end
 
   always @(negedge clk) if (writeEnable) mem_bank[writeaddr] = writeData;

@@ -8,11 +8,13 @@ module addersub_16 (
   wire [15:0] bsub;
 
   assign bsub = {16{sub}} ^ b;
+  wire c;
 
   adder_16 adder (
       .a  (a),
       .b  (bsub),
       .cin(sub),
+      .c  (c),
       .o  (out)
   );
 

@@ -1,23 +1,4 @@
-# Compile of bfx.v failed with 2 errors.
-# Compile of decode.v was successful.
-# Compile of memory.v failed with 2 errors.
-# Compile of mux.v was successful.
-# Compile of adder.v was successful.
-# 5 compiles, 2 failed with 4 errors.
-# Compile of bfx.v failed with 2 errors.
-# Compile of decode.v was successful.
-# Compile of memory.v failed with 2 errors.
-# Compile of mux.v was successful.
-# Compile of adder.v was successful.
-# Compile of io.v failed with 1 errors.
-# 6 compiles, 3 failed with 5 errors.
-# Compile of bfx.v was successful.
-# Compile of decode.v was successful.
-# Compile of memory.v was successful.
-# Compile of mux.v was successful.
-# Compile of adder.v was successful.
-# Compile of io.v failed with 1 errors.
-# 6 compiles, 1 failed with 1 error.
+# Load canceled
 # Compile of bfx.v was successful.
 # Compile of decode.v was successful.
 # Compile of memory.v was successful.

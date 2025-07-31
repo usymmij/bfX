@@ -2,16 +2,14 @@
 `include "decode.v"
 `include "memory.v"
 `include "mux.v"
+`include "io.v"
 
 module bfX (
     input clk,
-    input [7:0] in,
     output [7:0] currIX,
     output [15:0] dcout,
-    output [15:0] ndcout,
     output [15:0] dtout,
-    output [15:0] pcout,
-    output mDCFlagO
+    output [15:0] pcout
 );
 
   reg [15:0] pc;
@@ -34,8 +32,6 @@ module bfX (
     pc <= pc + 1;
     dc <= nextdc;
   end
-
-  assign ndcout = nextdc;
 
   assign dtaddr = nextdc;
 
@@ -91,18 +87,27 @@ module bfX (
   assign dcout = dc;
   assign dtout = dt;
 
-  assign writeEnable = modifyData;
+  assign writeEnable = modifyData | (io & mode);
   assign dtWrite = addsubout;
 
   reg mDCFlag;
-  assign mDCFlag  = modifyDC;
-  assign mDCFlagO = mDCFlag;
+  assign mDCFlag = modifyDC;
 
   always @(*) begin
     if (mDCFlag) nextdc = addsubout;
     else nextdc = dc;
-
   end
+
+  wire [7:0] inbyte;
+
+  inputbus inbus (
+      io & mode,
+      inbyte
+  );
+  outputbus outbus (
+      io & ~mode,
+      dtFetch
+  );
 
   assign currIX = {8'h0, ixFetch};
 
@@ -118,29 +123,22 @@ endmodule
 module tb_bfx ();
 
   reg clk;
-  reg [7:0] in;
   wire [7:0] currInstruction;
   wire [15:0] dataPointer;
-  wire [15:0] nextdataPointer;
   wire [15:0] data;
   wire [15:0] pc;
-  wire mDCF;
 
   bfX bfx (
       clk,
-      in,
       currInstruction,
       dataPointer,
-      nextdataPointer,
       data,
-      pc,
-      mDCF
+      pc
   );
 
   always #5 clk = ~clk;
 
   initial begin
-    in  = 0;
     clk = 0;
   end
 
