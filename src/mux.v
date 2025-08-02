@@ -1,3 +1,19 @@
+module mux_2_1_16bit (
+    input [15:0] a,
+    input [15:0] b,
+    input sel,
+    output reg [15:0] o
+);
+
+  always @(*) begin
+    case (sel)
+      1'h0: o = a;
+      1'h1: o = b;
+    endcase
+  end
+
+endmodule
+
 module mux_4_1_16bit (
     input [15:0] a,
     input [15:0] b,

@@ -10,6 +10,7 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 -- Compiling module tb_decode
 -- Compiling module mem
 -- Compiling module tb_mem
+-- Compiling module mux_2_1_16bit
 -- Compiling module mux_4_1_16bit
 -- Compiling module mux_2_1_8bit
 -- Compiling module inputbus
@@ -24,22 +25,10 @@ Top level modules:
 	tb_addersub
 	tb_decode
 	tb_mem
+	mux_2_1_16bit
 	tb_input
 	tb_output
 	tb_bfx
-
-} {} {}} /home/jimmy/code/bfX/src/adder.v {1 {vlog -work work -stats=none /home/jimmy/code/bfX/src/adder.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module addersub_16
--- Compiling module full_adder
--- Compiling module adder_4
--- Compiling module adder_16
--- Compiling module tb_adder
--- Compiling module tb_addersub
-
-Top level modules:
-	tb_adder
-	tb_addersub
 
 } {} {}} /home/jimmy/code/bfX/src/decode.v {1 {vlog -work work -stats=none /home/jimmy/code/bfX/src/decode.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -59,11 +48,29 @@ Top level modules:
 
 } {} {}} /home/jimmy/code/bfX/src/mux.v {1 {vlog -work work -stats=none /home/jimmy/code/bfX/src/mux.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mux_2_1_16bit
 -- Compiling module mux_4_1_16bit
 -- Compiling module mux_2_1_8bit
 
 Top level modules:
+	mux_2_1_16bit
 	mux_4_1_16bit
 	mux_2_1_8bit
+
+} {} {}} /home/jimmy/code/bfX/src/alu.v {1 {vlog -work work -stats=none /home/jimmy/code/bfX/src/alu.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module addersub_8
+-- Compiling module addersub_16
+-- Compiling module full_adder
+-- Compiling module adder_4
+-- Compiling module adder_8
+-- Compiling module adder_16
+-- Compiling module tb_adder
+-- Compiling module tb_addersub
+
+Top level modules:
+	addersub_8
+	tb_adder
+	tb_addersub
 
 } {} {}}

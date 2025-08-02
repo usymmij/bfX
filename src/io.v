@@ -33,10 +33,11 @@ module outputbus (
   integer file;
 
   always @(posedge ready) begin
-    file = $fopen("output.txt", "a");
-    $fdisplayh(file, out);
-    $fclose(file);
-    // extra slow to "simulate" real IO
+    if (ready) begin
+      file = $fopen("output.txt", "a");
+      $fdisplayh(file, out);
+      $fclose(file);
+    end
   end
 
   initial begin

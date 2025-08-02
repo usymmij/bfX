@@ -1,7 +1,7 @@
 module decode (
     input clk,
     input [7:0] ix,
-    output dataCounter,
+    output reg dataCounter,
     data,
     io,
     branch,
@@ -11,9 +11,17 @@ module decode (
   assign dataCounter = ~(ix[3] | ix[2] | ix[1]);
   assign data = ~(ix[3] | ix[2]) & ix[1];
   assign io = ~(ix[3] | ix[1]) & ix[2];
-  assign branch = ix[3] & ~ix[2] & ~ix[1];
+  assign branch = ~ix[3] & ix[2] & ix[1];
   assign stop = &ix;
   assign mode = ix[0];
+  initial begin
+    dataCounter = 0;
+    data = 0;
+    io = 0;
+    branch = 0;
+    stop = 0;
+    mode = 0;
+  end
 
 endmodule
 
